@@ -3,42 +3,44 @@ import { Link } from 'react-router-dom'
 
 
 import logo from '../../assets/img/logo.svg'
+import { HeaderBtn, HeaderInner, HeaderLogoWrapper, HeaderSelect, HeaderWrapper } from './Styled'
+import { Container } from '../../assets/style/GlobalStyled'
 
 
 function Header() {
   return (
-    <header className='header'>
-        <div className="container">
-            <div className="header__logo__wrapper">
+    <HeaderWrapper>
+        <Container>
+            <HeaderLogoWrapper>
               <Link to='/'>
                 <img src={logo} alt="" />
               </Link>
               <p>
-                Лучшие цены 
+                Лучшие цены <br />
                 в интернет-магазинах 
               </p>
-            </div>
-            <div className="header__inner">
-              <select>
+            </HeaderLogoWrapper>
+            <HeaderInner>
+              <HeaderSelect>
                 <option value="" selected>Каталог товаров</option>
                 <option value="">Каталог товаров1</option>
                 <option value="">Каталог товаров2</option>
-              </select>
+              </HeaderSelect>
               <label className='search__label' htmlFor="search"></label>
               <input className='search__inp' id='search' type="text" placeholder='Поиск товаров'/>
-              <button>
-              <i class="bi bi-heart"></i>
-              </button>
-              <button>
-              <i class="bi bi-bar-chart"></i>
-              </button>
-              <button>
+              <HeaderBtn>
+                <i class="bi bi-heart"></i>
+              </HeaderBtn>
+              <HeaderBtn>
+                <i class="bi bi-bar-chart"></i>
+              </HeaderBtn>
+              <HeaderBtn>
                 <i class="bi bi-person"></i>
-              </button>
+              </HeaderBtn>
 
-            </div>
-        </div>
-    </header>
+            </HeaderInner>
+        </Container>
+    </HeaderWrapper>
   )
 }
 
