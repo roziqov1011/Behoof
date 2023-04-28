@@ -47,11 +47,11 @@ export const SliderProgress = styled.div`
     line-height: 18px;
   }
   span {
+    display: block;
     width: 88.4px;
     height: 4px;
     background: #ECEEEF;
     border-radius: 2px;
-    display: block;
     margin: 0 2px;
   }
   div{
