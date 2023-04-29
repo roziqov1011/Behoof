@@ -11,6 +11,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Pagination } from "swiper";
+import { TitleWrapper } from '../New/Styled'
 function Reviews() {
     const arr = [1, 2, 3, 4]
     const [changeWidth, setChangeWidth] = useState(window.innerWidth)
@@ -20,7 +21,10 @@ function Reviews() {
     return (
         <ReviewsWrapper>
             <Container>
+                <TitleWrapper>
                 <h2>Обзоры</h2>
+                <Link to='/'>К обзорам <i class="bi bi-chevron-right"></i></Link>
+                </TitleWrapper>
                 <ReviewsList>
                     <Swiper
                         slidesPerView={changeWidth >= 1440 ? 4:changeWidth  <= 1440 &&  changeWidth >= 900 ? 3 : changeWidth <= 900 && changeWidth >= 500 ? 2 : 1}

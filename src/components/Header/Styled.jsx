@@ -12,12 +12,27 @@ export const HeaderWrapper = styled.header`
 export const HeaderLogoWrapper = styled.div`
     display: flex;
     align-items: center;
+    p{
+        margin-left: 11px;
+    }
 `
 export const HeaderInner = styled.div`
 display: flex;
 flex-grow: 0.9;
+.search__inp__wrapper{
+    display: flex;
+    position: relative;
+}
+label{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    color:  #7E8794;
+    font-weight: bold;
+}
     input{
         padding: 16px;
+        padding-left: 50px;
         border: none;
         background: #F2F5F9;
         border-radius: 0px 8px 8px 0px;

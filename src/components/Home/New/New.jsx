@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import watch from '../../../assets/img/smartWatch.png'
 import { Container } from '../../../assets/style/GlobalStyled'
-import { NewWrapper, ProductItem, ProductItemInner, ProductList } from './Styled'
+import { NewWrapper, ProductItem, ProductItemInner, ProductList, TitleWrapper } from './Styled'
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 
 import '../Choice/Slider/styles.css'
 import { Grid, Navigation, Pagination } from "swiper";
+import { Link } from 'react-router-dom';
 function New() {
     const arr = [1,2,3,4,5,6,7,8,9,10]
     const [changeWidth, setChangeWidth] = useState(window.innerWidth)
@@ -19,7 +20,10 @@ function New() {
   return (
     <NewWrapper>
         <Container>
-            <h2>Новинки</h2>
+            <TitleWrapper>
+                <h2>Новинки</h2>
+                <Link to='/'>К новинкам <i class="bi bi-chevron-right"></i></Link>
+            </TitleWrapper>
             <ProductList>
             <Swiper
                 

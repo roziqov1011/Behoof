@@ -26,8 +26,10 @@ function Header() {
                 <option value="">Каталог товаров1</option>
                 <option value="">Каталог товаров2</option>
               </HeaderSelect>
-              <label className='search__label' htmlFor="search"></label>
-              <input className='search__inp' id='search' type="text" placeholder='Поиск товаров'/>
+              <div className='search__inp__wrapper'>
+                <label className='search__label' htmlFor="search"><i class="bi bi-search"></i></label>
+                <input className='search__inp' id='search' type="text" placeholder='Поиск товаров'/>
+              </div>
               <HeaderBtn>
                 <i className="bi bi-heart"></i>
               </HeaderBtn>

@@ -3,7 +3,14 @@ import styled from 'styled-components';
 export const ReviewsWrapper = styled.div`
 margin-top: 80px;
 `;
-
+export const TitleWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a{
+        color: #FF4D4D
+    }
+`
 export const ReviewsList = styled.ul`
   list-style-type: none;
   display: flex;
