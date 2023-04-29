@@ -13,9 +13,9 @@ export const ReviewsList = styled.ul`
 `;
 
 export const ReviewsItem = styled.li`
-margin-top: 20px;
+    margin-top: 20px;
     width: 342px;
-    height: 500px;
+    height: auto;
     background: #F6F7FA;
     border-radius: 12px;
     overflow: hidden;
@@ -23,6 +23,7 @@ margin-top: 20px;
 
 export const ReviewsItemInner = styled.li`
     padding: 16px;
+
     b{
         font-weight: 600;
 font-size: 20px;
