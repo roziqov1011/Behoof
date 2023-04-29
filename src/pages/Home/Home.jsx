@@ -10,7 +10,7 @@ function Home() {
   return (
     <div>
       <Hero/>
-      {/* <Choice/> */}
+      <Choice/>
       <OurGoal/>
       <Social/>
       <New/>
