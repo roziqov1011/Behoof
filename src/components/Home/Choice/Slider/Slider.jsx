@@ -14,15 +14,15 @@ import { Grid, Navigation, Pagination } from "swiper";
 import SliderItem from "../SliderItem/SliderItem";
 
 export default function MySlider() {
-const [changeWidth, setChangeWidth] = useState(1200)
+const [changeWidth, setChangeWidth] = useState(window.innerWidth)
   window.onresize = function() {
     setChangeWidth(window.innerWidth)
   };
 
   return (
-    <div className='my__test'>
+    <div style={{width: `${changeWidth}px`}} className='my__test'>
       <Swiper
-        slidesPerView={changeWidth >=900 ? 2: 1}
+        slidesPerView={changeWidth >=990 ? 2: 1}
         grid={{
           rows: 2,
         }}
@@ -32,9 +32,6 @@ const [changeWidth, setChangeWidth] = useState(1200)
         modules={[Grid,Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide> 
-          <SliderItem/>
-           </SwiperSlide>
         <SwiperSlide> 
           <SliderItem/>
            </SwiperSlide>

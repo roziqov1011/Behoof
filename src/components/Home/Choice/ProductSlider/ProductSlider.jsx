@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import mac from '../../../../assets/img/choiceMc.png'
 
-// import "./styles.css";
+import "../Slider/styles.css";
 
 // import required modules
 import { Pagination } from "swiper";
@@ -19,15 +19,12 @@ export default function ProductSlider() {
   window.onresize = function() {
     setChangeWidth(window.innerWidth)
   };
-
   return (
-    <>
-    <ChoiceList>
-                    
-                </ChoiceList>
+    <div style={{width: `${changeWidth}px`}}>
+
       <Swiper
-        slidesPerView={changeWidth >= 1440 ? 8: changeWidth >= 1000 ? 6 : changeWidth >= 800 ? 4 : changeWidth >= 500 ? 2 : changeWidth <= 500 ? 1 : 1}
-        spaceBetween={30}
+        slidesPerView={changeWidth >= 1440 ? 8:changeWidth  <= 1440 &&  changeWidth >= 1000 ? 6 : changeWidth <= 1000 && changeWidth >= 800 ? 5 : changeWidth <= 800 &&changeWidth >= 640 ? 4:changeWidth <= 640 &&  changeWidth >= 450 ? 3:changeWidth <= 450 &&  changeWidth >= 300 ? 2  : 1}
+        spaceBetween={10}
        
         modules={[Pagination]}
         className="mySwiper"
@@ -39,13 +36,13 @@ export default function ProductSlider() {
                                     <div>
                                         <img src={mac} alt="" />
                                     </div>
-                                    <p>Смартфоны</p>
+                                    <p>Смартфоны {item}</p>
                                 </ChoiceItem>
                             </SwiperSlide>
                         ))
                     }
         
       </Swiper>
-    </>
+    </div>
   );
 }

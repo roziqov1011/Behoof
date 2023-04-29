@@ -11,6 +11,9 @@ margin-top: 20px;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  @media (max-width: 720px) {
+    justify-content: space-around;
+  }
 `;
 export const OurGoalItem = styled.li`
   max-width: 336px;
@@ -19,10 +22,16 @@ export const OurGoalItem = styled.li`
     font-size: 48px;
     line-height: 64px;
     color: #ff4d4d;
+    @media (max-width: 400px) {
+    font-size: 32px;
+  }
   }
   p {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    @media (max-width: 400px) {
+    font-size: 12px;
+  }
   }
 `;

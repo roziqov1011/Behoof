@@ -4,11 +4,15 @@ export const NewWrapper = styled.div`
 padding-top: 80px;
 `
 export const ProductList= styled.ul`
+max-height: 750px;
 list-style-type: none;
 display: flex;
 justify-content: space-between;
 align-items: center;
 flex-wrap: wrap;
+@media (max-width: 600px) {
+    justify-content: space-around;
+}
 
 `
 export const ProductItem= styled.li`

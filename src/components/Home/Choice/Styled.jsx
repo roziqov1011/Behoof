@@ -20,9 +20,10 @@ export const ChoiceRotate = styled.div`
   height: 87%;
 `;
 
-export const ChoiceInner = styled.div`
+export const ChoiceInner =  styled.div`
   position: relative;
   z-index: 3;
+
 `;
 export const ChoiceList = styled.ul`
   margin-top: 20px;
@@ -58,7 +59,7 @@ export const ChoiceBtnList = styled.ul`
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-
+ 
 `
 export const ChoiceBtnItem = styled.li`
   button{
