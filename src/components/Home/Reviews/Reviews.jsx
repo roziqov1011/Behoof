@@ -18,7 +18,7 @@ function Reviews() {
                             <ReviewsItemInner>
                                 <b>Обзор устаревших смартфонов</b>
                                 <p>Lorem ipsum dolor sit amet consectetur. Rhoncus risus  viverra enim nunc. </p>
-                                <Link to='/ '>Смотреть<i class="bi bi-chevron-right"></i></Link>
+                                <Link to='/ '>Смотреть<i className="bi bi-chevron-right"></i></Link>
                             </ReviewsItemInner>
                         </ReviewsItem>
                     ))

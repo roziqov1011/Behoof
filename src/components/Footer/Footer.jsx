@@ -2,7 +2,7 @@ import React from 'react'
 import logo from '../../assets/img/logo.svg'
 import vk from '../../assets/img/vk.svg'
 import { Container } from '../../assets/style/GlobalStyled'
-import { FooterBottom, FooterInner, FooterItem, FooterList, FooterNav, FooterWrapper } from './Styled'
+import { FooterBottom, FooterInner, FooterItem, FooterList, FooterListWrapper, FooterNav, FooterWrapper } from './Styled'
 import { Link } from 'react-router-dom'
 
 function Footer() {
@@ -19,20 +19,21 @@ function Footer() {
                 <img src={vk} alt="" />
                 </a>
                 <a href="#">
-                  <i class="bi bi-tiktok"></i>
+                  <i className="bi bi-tiktok"></i>
                 </a>
                 <a href="#">
-                <i class="bi bi-instagram"></i>
+                <i className="bi bi-instagram"></i>
                 </a>
                 <a href="#">
-                <i class="bi bi-telegram"></i>
+                <i className="bi bi-telegram"></i>
                 </a>
                 <a href="#">
-                <i class="bi bi-youtube"></i>
+                <i className="bi bi-youtube"></i>
                 </a>
               </span>
             </Link>
           </FooterNav>
+          <FooterListWrapper>
           <FooterList>
             <FooterItem>
               <p>Пользователю</p>
@@ -84,6 +85,7 @@ function Footer() {
               <Link to='/'>Работа у нас</Link>
             </FooterItem>
           </FooterList>
+          </FooterListWrapper>
         </FooterInner>
         <FooterBottom>Copyright © 2023 Behoof, Inc. Все права защищены</FooterBottom>
       </Container>

@@ -18,11 +18,11 @@ function New() {
                             <b>Apple iPhone 13 Pro Max 256 ГБ серый</b>
                             <ProductItemInner>
                                 <div>
-                                    <p><span>Цена</span><i class="bi bi-caret-down-fill"></i> 13%</p>
+                                    <p><span>Цена</span><i className="bi bi-caret-down-fill"></i> 13%</p>
                                     <b>114 099 ₽</b>
                                 </div>
-                                <button><i class="bi bi-heart"></i></button>
-                                <button><i class="bi bi-bar-chart-line"></i></button>
+                                <button><i className="bi bi-heart"></i></button>
+                                <button><i className="bi bi-bar-chart-line"></i></button>
                             </ProductItemInner>
                         </ProductItem>
                     ))

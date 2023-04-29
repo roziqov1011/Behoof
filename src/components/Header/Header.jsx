@@ -9,8 +9,8 @@ import { Container } from '../../assets/style/GlobalStyled'
 
 function Header() {
   return (
-    <HeaderWrapper>
-        <Container>
+    <Container >
+          <HeaderWrapper>
             <HeaderLogoWrapper>
               <Link to='/'>
                 <img src={logo} alt="" />
@@ -22,25 +22,24 @@ function Header() {
             </HeaderLogoWrapper>
             <HeaderInner>
               <HeaderSelect>
-                <option value="" selected>Каталог товаров</option>
+                <option value="" >Каталог товаров</option>
                 <option value="">Каталог товаров1</option>
                 <option value="">Каталог товаров2</option>
               </HeaderSelect>
               <label className='search__label' htmlFor="search"></label>
               <input className='search__inp' id='search' type="text" placeholder='Поиск товаров'/>
               <HeaderBtn>
-                <i class="bi bi-heart"></i>
+                <i className="bi bi-heart"></i>
               </HeaderBtn>
               <HeaderBtn>
-                <i class="bi bi-bar-chart"></i>
+                <i className="bi bi-bar-chart"></i>
               </HeaderBtn>
               <HeaderBtn>
-                <i class="bi bi-person"></i>
+                <i className="bi bi-person"></i>
               </HeaderBtn>
-
             </HeaderInner>
+          </HeaderWrapper>
         </Container>
-    </HeaderWrapper>
   )
 }
 

@@ -19,10 +19,10 @@ function SliderItem() {
         </div>
         <div>
           <button>
-            <i class="bi bi-heart"></i>
+            <i className="bi bi-heart"></i>
           </button>
           <button>
-            <i class="bi bi-bar-chart-line"></i>
+            <i className="bi bi-bar-chart-line"></i>
           </button>
         </div>
       </SliderItemTop>
@@ -34,7 +34,7 @@ function SliderItem() {
                     <div>
                     {
                         arr?.map((item, index)=>(
-                            <span class={Desigin >= index+1 ? 'active': null}></span>
+                            <span key={index} className={Desigin >= index+1 ? 'active': null}></span>
                         ))
                     }
                     </div>
@@ -44,7 +44,7 @@ function SliderItem() {
                     <div>
                     {
                         arr?.map((item, index)=>(
-                            <span class={Power >= index+1 ? 'active': null}></span>
+                            <span key={index} className={Power >= index+1 ? 'active': null}></span>
                         ))
                     }
                     </div>
@@ -54,7 +54,7 @@ function SliderItem() {
                     <div>
                     {
                         arr?.map((item, index)=>(
-                            <span class={Display >= index+1 ? 'active': null}></span>
+                            <span key={index} className={Display >= index+1 ? 'active': null}></span>
                         ))
                     }
                     </div>
@@ -64,7 +64,7 @@ function SliderItem() {
                     <div>
                     {
                         arr?.map((item, index)=>(
-                            <span class={Camera >= index+1 ? 'active': null}></span>
+                            <span key={index} className={Camera >= index+1 ? 'active': null}></span>
                         ))
                     }
                     </div>
@@ -74,7 +74,7 @@ function SliderItem() {
                     <div>
                     {
                         arr?.map((item, index)=>(
-                            <span class={Answer >= index+1 ? 'active': null}></span>
+                            <span key={index} className={Answer >= index+1 ? 'active': null}></span>
                         ))
                     }
                     </div>
@@ -84,7 +84,7 @@ function SliderItem() {
                     <div>
                     {
                         arr?.map((item, index)=>(
-                            <span class={Portability >= index+1 ? 'active': null}></span>
+                            <span key={index} className={Portability >= index+1 ? 'active': null}></span>
                         ))
                     }
                     </div>
