@@ -20,7 +20,7 @@ const [changeWidth, setChangeWidth] = useState(window.innerWidth)
   };
 
   return (
-    <div style={{width: `${changeWidth - 160}px`}} className='my__test'>
+    <div style={{width: `${changeWidth >= 900? changeWidth - 160: changeWidth}px`}} className='my__test'>
       <Swiper
         slidesPerView={changeWidth >=990 ? 2: 1}
         grid={{
