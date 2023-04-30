@@ -6,7 +6,7 @@ import SliderItem from './SliderItem/SliderItem'
 import { ChoiceInner, ChoiceItem, ChoiceList, ChoiceRotate, ChoiceWrapper } from './Styled'
 
 function Choice() {
-    const arr = [1,2,3,4,5,6,7,8]
+    const arr = [1,2,3,4,5,6,7,8,10,11,12,13,14]
   return (
     <ChoiceWrapper>
         <ChoiceRotate/>
