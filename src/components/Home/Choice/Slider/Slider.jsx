@@ -28,7 +28,7 @@ const [changeWidth, setChangeWidth] = useState(window.innerWidth)
         }}
         spaceBetween={10}
         navigation={true}
-       
+
         modules={[Grid,Navigation]}
         className="mySwiper"
       >

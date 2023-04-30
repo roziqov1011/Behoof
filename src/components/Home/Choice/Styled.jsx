@@ -3,13 +3,17 @@ import styled from "styled-components";
 export const ChoiceWrapper = styled.div`
 
   padding: 120px 0;
-  margin: 90px 0;
+  margin: 53px 0;
   position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  @media (max-width: 600px) {
+    margin: 0px 0;
+    padding: 50px 0;
+  }
 `;
 export const ChoiceRotate = styled.div`
   position: absolute;
@@ -23,6 +27,9 @@ export const ChoiceRotate = styled.div`
 export const ChoiceInner =  styled.div`
   position: relative;
   z-index: 3;
+  h2{
+    margin-top: 20px;
+  }
 
 `;
 export const ChoiceList = styled.ul`
@@ -55,7 +62,7 @@ p{
 
 export const ChoiceBtnList = styled.ul`
   padding-left: 40px;
-  margin-top: 50px;
+  padding-top: 24px;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
