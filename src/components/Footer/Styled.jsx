@@ -9,6 +9,7 @@ export const FooterInner = styled.div`
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+   
     
 `;
 export const FooterBottom = styled.p`
@@ -36,9 +37,23 @@ export const FooterNav= styled.div`
         }
     }
 `;
+export const FooterListWrapper = styled.div`
+    padding-left: 40px;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    @media (max-width: 800px) {
+        flex-direction: column;
+        flex-grow: 0;
+    }
+    @media (max-width: 520px) {
+        padding-left: 0;
+    }
 
+`;
 export const FooterList = styled.ul`
     list-style-type: none;
+    margin-top: 20px;
 
 `;
 export const FooterItem= styled.li`

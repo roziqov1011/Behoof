@@ -3,7 +3,14 @@ import styled from 'styled-components';
 export const ReviewsWrapper = styled.div`
 margin-top: 80px;
 `;
-
+export const TitleWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a{
+        color: #FF4D4D
+    }
+`
 export const ReviewsList = styled.ul`
   list-style-type: none;
   display: flex;
@@ -13,9 +20,9 @@ export const ReviewsList = styled.ul`
 `;
 
 export const ReviewsItem = styled.li`
-margin-top: 20px;
+    margin-top: 20px;
     width: 342px;
-    height: 500px;
+    height: auto;
     background: #F6F7FA;
     border-radius: 12px;
     overflow: hidden;
@@ -23,6 +30,7 @@ margin-top: 20px;
 
 export const ReviewsItemInner = styled.li`
     padding: 16px;
+
     b{
         font-weight: 600;
 font-size: 20px;

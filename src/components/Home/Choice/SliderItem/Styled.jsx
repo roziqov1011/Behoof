@@ -53,6 +53,12 @@ export const SliderProgress = styled.div`
     background: #ECEEEF;
     border-radius: 2px;
     margin: 0 2px;
+    @media (max-width: 1240px) {
+      width: 60px;
+    }
+    @media (max-width: 500px) {
+      width: 40px;
+    }
   }
   div{
     display: flex;

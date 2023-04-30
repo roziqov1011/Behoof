@@ -14,6 +14,15 @@ background-position: bottom right 300px, bottom right 150px, center;
 background-size:290px , 200px, contain;
 padding: 80px;
 border-radius: 16px;
+@media (max-width: 1200px) {
+    background-size:200px , 110px, contain;
+padding: 50px;
+
+}
+@media (max-width: 800px) {
+            padding-bottom: 250px;
+            background-position: bottom right 150px, bottom right 50px, center;
+        }
     p{
         font-weight: 700;
         font-size: 48px;
@@ -22,13 +31,35 @@ border-radius: 16px;
         span{
             color: #FF4D4D;
         }
+        @media (max-width: 1100px) {
+            font-weight: 700;
+        font-size: 40px;
+        line-height: 54px;
+        }
+        @media (max-width: 600px) {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 24px;
+        }
     }
     div{
         max-width: 400px;
         margin-top: 40px;
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
+        @media (max-width: 800px) {
+            max-width: 300px;
+            img{
+                width: 150px;
+                height: 45px;
+            }
+        }
+        @media (max-width: 440px) {
+            img{
+                width: 120px;
+                height: 35px;
+            }
+        }
     }
 
 `

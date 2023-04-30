@@ -14,13 +14,13 @@ function OurGoal() {
             <OurGoalList>
                 {
                     arr?.map((item, index)=>(
-                        <OurGoalItem>
+                        <OurGoalItem key={index}>
                         <span>{item}</span>
                         <p>Lorem ipsum dolor sit amet consectetur. Rhoncus risus nunc a pharetra viverra enim nunc. </p>
                         </OurGoalItem>
                     ))
                 }
-            </OurGoalList>
+            </OurGoalList> 
         </Container>
     </OurGoalWrapper>
   )

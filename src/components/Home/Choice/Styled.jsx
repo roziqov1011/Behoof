@@ -20,9 +20,10 @@ export const ChoiceRotate = styled.div`
   height: 87%;
 `;
 
-export const ChoiceInner = styled.div`
+export const ChoiceInner =  styled.div`
   position: relative;
   z-index: 3;
+
 `;
 export const ChoiceList = styled.ul`
   margin-top: 20px;
@@ -50,3 +51,32 @@ p{
     margin-top: 16px;
 }
 `;
+
+
+export const ChoiceBtnList = styled.ul`
+  padding-left: 40px;
+  margin-top: 50px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+ 
+`
+export const ChoiceBtnItem = styled.li`
+  button{
+    cursor: pointer;
+    margin-right: 16px;
+    padding: 12px;
+    background-color: #fff;
+    border: 1px solid #F2F5F9;
+    border-radius: 8px;
+  }
+  .active__btn{
+    color: red;
+  }
+  .active__btn::after{
+    color: #797c7f;
+    content: 'x';
+    margin-left: 10px;
+    font-weight: bold;
+  }
+`

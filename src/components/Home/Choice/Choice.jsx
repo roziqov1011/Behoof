@@ -1,30 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
 import mac from '../../../assets/img/choiceMc.png'
 import { Container } from '../../../assets/style/GlobalStyled'
 import MySlider from './Slider/Slider'
 import SliderItem from './SliderItem/SliderItem'
-import { ChoiceInner, ChoiceItem, ChoiceList, ChoiceRotate, ChoiceWrapper } from './Styled'
+import { ChoiceBtnItem, ChoiceBtnList, ChoiceInner, ChoiceItem, ChoiceList, ChoiceRotate, ChoiceWrapper } from './Styled'
+import ProductSlider from './ProductSlider/ProductSlider'
 
 function Choice() {
-    const arr = [1,2,3,4,5,6,7,8,10,11,12,13,14]
+    const dataBtn = ['Дизайн','Портативность','Камера', 'Ответ','Дисплей','Батарея']
+    const activeBtn = (e)=>{
+        e.target.classList.toggle('active__btn')
+    }
   return (
     <ChoiceWrapper>
         <ChoiceRotate/>
         <Container>
             <ChoiceInner>
                 <h2>Лучший выбор</h2>
-                <ChoiceList>
+                
+                <ProductSlider/>
+                <ChoiceBtnList>
                     {
-                        arr?.map((item, index)=>(
-                            <ChoiceItem key={index}>
-                                <div>
-                                    <img src={mac} alt="" />
-                                </div>
-                                <p>Смартфоны</p>
-                            </ChoiceItem>
+                        dataBtn?.map((item, index)=>(
+                            <ChoiceBtnItem key={index}>
+                                <button id={index} className='' onClick={activeBtn} >{item}</button>
+                            </ChoiceBtnItem>
                         ))
                     }
-                </ChoiceList>
+                </ChoiceBtnList>
                 <MySlider/>
             </ChoiceInner>
 
