@@ -15,11 +15,13 @@ export const HeaderLogoWrapper = styled.div`
     align-items: center;
     p{
         margin-left: 11px;
+        font-size: 14px;
     }
 `
 export const HeaderInner = styled.div`
 display: flex;
-flex-grow: 0.9;
+flex-grow: 1;
+margin-left: 32px;
 .search__inp__wrapper{
     display: flex;
     position: relative;
