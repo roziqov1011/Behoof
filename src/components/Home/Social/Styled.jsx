@@ -10,8 +10,8 @@ margin-top: 80px;
 background-color: #F6F7FA;
 background-image: url(${bgIphone}), url(${bgIphone}), url(${bgSocial});
 background-repeat: no-repeat;
-background-position: bottom right 300px, bottom right 150px, center;
-background-size:290px , 200px, contain;
+background-position: bottom right 340px, bottom -53px right 150px, center;
+background-size:295px , 295px, contain;
 padding: 80px;
 border-radius: 16px;
 @media (max-width: 1200px) {
@@ -43,7 +43,7 @@ padding: 50px;
         }
     }
     div{
-        max-width: 400px;
+        max-width: 420px;
         margin-top: 40px;
         display: flex;
         justify-content: space-between;

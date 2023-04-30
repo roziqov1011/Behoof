@@ -60,7 +60,7 @@ export const HeroRight = styled.div `
     max-width: 500px;
     background: #F2F5F9;
     border-radius: 16px;
-    padding: 40px;
+    padding: 60px 40px;
     background-image: url(${bgImg1}), url(${bgImg2});
     background-repeat: no-repeat;
     background-position: center,  bottom right 44px;
@@ -82,11 +82,13 @@ export const HeroRight = styled.div `
     }
     }
     a{
+        display: flex;
+        align-items: center;
         background: #FF4D4D;
         border-radius: 8px;
         padding: 16px 20px;
         color: white;
-        margin-top: 32px;
+        margin-top: 40px;
         display: inline-block;
     }
 `

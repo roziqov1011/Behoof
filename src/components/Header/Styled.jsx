@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderWrapper = styled.header`
+        padding: 12px 0;
         border-bottom: 3px solid #FDFDFD;;
         display: flex;
         align-items: center;
@@ -27,9 +28,10 @@ flex-grow: 0.9;
 label{
     position: absolute;
     top: 15px;
-    left: 10px;
+    left: 21px;
     color:  #7E8794;
     font-weight: bold;
+    font-size: 22px;
 }
     input{
         padding: 16px;
@@ -59,6 +61,7 @@ border-radius: 8px;
 padding: 16px;
 border:none;
 margin-left: 20px;
+font-size: 22px;
 @media (max-width: 430px) {
             display: none;
         }
