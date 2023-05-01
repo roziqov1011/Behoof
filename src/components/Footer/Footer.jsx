@@ -32,7 +32,7 @@ function Footer() {
                 </a>
               </span>
             </Link>
-          </FooterNav>
+          </FooterNav> 
           <FooterListWrapper>
           <FooterList>
             <FooterItem>

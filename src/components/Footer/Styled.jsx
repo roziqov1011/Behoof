@@ -34,6 +34,10 @@ export const FooterNav= styled.div`
         align-items: center;
         a{
             color: black;
+            font-size: 20px;
+            img{
+                width: 22px;
+            }
         }
     }
 `;
@@ -53,11 +57,10 @@ export const FooterListWrapper = styled.div`
 `;
 export const FooterList = styled.ul`
     list-style-type: none;
-    margin-top: 20px;
 
 `;
 export const FooterItem= styled.li`
-margin-bottom: 20px;
+margin-bottom: 16px;
     p{
         color: #A1ABB9;
     }
