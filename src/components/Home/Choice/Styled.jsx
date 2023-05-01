@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 export const ChoiceWrapper = styled.div`
 
-  padding: 120px 0;
-  margin: 53px 0;
+  padding: 53px 0;
   position: relative;
   width: 100%;
   display: flex;
@@ -18,7 +17,7 @@ export const ChoiceWrapper = styled.div`
 export const ChoiceRotate = styled.div`
   position: absolute;
   z-index: 2;
-  transform: rotate(3deg);
+  transform: rotate(2deg);
   background: #F2F5F9;
   width: 150%;
   height: 87%;
@@ -28,7 +27,8 @@ export const ChoiceInner =  styled.div`
   position: relative;
   z-index: 3;
   h2{
-    margin-top: 20px;
+    margin-top: 60px;
+   margin-bottom: 20px;
   }
 
 `;

@@ -7,10 +7,7 @@ padding-bottom: 25px;
 `;
 export const FooterInner = styled.div`
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-   
-    
 `;
 export const FooterBottom = styled.p`
     padding-top: 24px;
@@ -44,7 +41,7 @@ export const FooterNav= styled.div`
 export const FooterListWrapper = styled.div`
     padding-left: 40px;
     display: flex;
-    flex-grow: 1;
+    flex-grow: 0.8;
     justify-content: space-evenly;
     @media (max-width: 800px) {
         flex-direction: column;

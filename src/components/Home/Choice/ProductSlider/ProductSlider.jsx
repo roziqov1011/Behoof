@@ -20,7 +20,7 @@ export default function ProductSlider() {
     setChangeWidth(window.innerWidth)
   };
   return (
-    <div style={{width: `${changeWidth >= 900? changeWidth - 160: changeWidth}px`}}>
+    <div style={{width: `${changeWidth <= 1440 &&changeWidth >= 900? changeWidth - 160: changeWidth > 1440 ? 1440 : changeWidth}px`}}>
 
       <Swiper
         slidesPerView={changeWidth >= 1440 ? 8 :changeWidth  <= 1440 &&  changeWidth >= 1000 ? 6 : changeWidth <= 1000 && changeWidth >= 800 ? 5 : changeWidth <= 800 &&changeWidth >= 640 ? 4:changeWidth <= 640 &&  changeWidth >= 450 ? 3:changeWidth <= 450 &&  changeWidth >= 300 ? 2  : 1}

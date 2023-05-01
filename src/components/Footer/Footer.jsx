@@ -11,8 +11,9 @@ function Footer() {
       <Container>
         <FooterInner>
           <FooterNav>
-            <Link to='/'>
+              <Link to='/'>
               <img src={logo} alt="" />
+              </Link>
               <p>Мы в соц сетях</p>
               <span>
                 <a href="#">
@@ -31,7 +32,7 @@ function Footer() {
                 <i className="bi bi-youtube"></i>
                 </a>
               </span>
-            </Link>
+           
           </FooterNav> 
           <FooterListWrapper>
           <FooterList>
