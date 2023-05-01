@@ -22,6 +22,9 @@ export const HeaderInner = styled.div`
 display: flex;
 flex-grow: 1;
 margin-left: 32px;
+@media (max-width: 580px) {
+            margin-left: 0;
+        }
 .search__inp__wrapper{
     display: flex;
     position: relative;
@@ -44,6 +47,9 @@ label{
         border-radius: 0px 8px 8px 0px;
         display: flex;
         flex-grow: 1;
+        @media (max-width: 580px) {
+            border-radius: 8px;
+        }
     }
 `
 export const SelectWrapper =  styled.div`
