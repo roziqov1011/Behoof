@@ -4,6 +4,9 @@ export const NewWrapper = styled.div `
 padding-top: 80px;
 `
 export const TitleWrapper = styled.div `
+h2{
+    padding-left: 6px;
+}
 display: flex;
 justify-content: space-between;
 align-items: center;

@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const OurGoalWrapper = styled.div`
   margin-top: 10px;
+  h2{
+    padding-left: 6px;
+  }
 `;
 
 export const OurGoalList = styled.ul`

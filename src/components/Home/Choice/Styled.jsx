@@ -30,6 +30,7 @@ export const ChoiceInner =  styled.div`
   h2{
     margin-top: 60px;
    margin-bottom: 20px;
+   padding-left: 16px;
   }
 
 `;
@@ -54,9 +55,21 @@ text-align: center;
         height: 124px;
         object-fit: cover;
     }
+    @media (max-width: 500px) {
+      width: 102px;
+      height: 102px;
+      padding: 12px;
+      img{
+        width: 77px;
+        height: 77px;
+      }
+    }
 }
 p{
     margin-top: 16px;
+    @media (max-width: 450px) {
+      font-size: 12px;
+    }
 }
 `;
 
