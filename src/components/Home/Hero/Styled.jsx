@@ -48,6 +48,10 @@ export const HeroLeft = styled.div `
         color: white;
         margin-top: 32px;
         display: inline-block;
+        i{
+            margin-left: 15px;
+            font-weight: bold;
+        }
         @media (max-width: 1000px) {
             margin-top: 22px;
         }
@@ -86,9 +90,14 @@ export const HeroRight = styled.div `
         align-items: center;
         background: #FF4D4D;
         border-radius: 8px;
+        font-size: 16px;
         padding: 16px 20px;
         color: white;
         margin-top: 40px;
-        display: inline-block;
+        max-width: 147px;
+        i{
+            margin-left: 15px;
+            font-weight: bold;
+        }
     }
 `
