@@ -23,7 +23,7 @@ function Reviews() {
             <Container>
                 <TitleWrapper>
                 <h2>Обзоры</h2>
-                <Link to='/'>К обзорам <i class="bi bi-chevron-right"></i></Link>
+                <Link to='/'>К обзорам <i className="bi bi-chevron-right"></i></Link>
                 </TitleWrapper>
                 <ReviewsList>
                     <Swiper

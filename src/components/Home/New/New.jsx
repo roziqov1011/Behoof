@@ -22,7 +22,7 @@ function New() {
         <Container>
             <TitleWrapper>
                 <h2>Новинки</h2>
-                <Link to='/'>К новинкам <i class="bi bi-chevron-right"></i></Link>
+                <Link to='/'>К новинкам <i className="bi bi-chevron-right"></i></Link>
             </TitleWrapper>
             <ProductList>
             <Swiper

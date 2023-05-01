@@ -10,8 +10,8 @@ margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   @media (max-width: 720px) {
+    flex-wrap: wrap;
     justify-content: space-around;
   }
 `;

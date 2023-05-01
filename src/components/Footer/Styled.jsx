@@ -41,7 +41,7 @@ export const FooterListWrapper = styled.div`
     padding-left: 40px;
     display: flex;
     flex-grow: 1;
-    justify-content: space-between;
+    justify-content: space-evenly;
     @media (max-width: 800px) {
         flex-direction: column;
         flex-grow: 0;
