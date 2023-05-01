@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 
 import logo from '../../assets/img/logo.svg'
-import { HeaderBtn, HeaderInner, HeaderLogoWrapper, HeaderSelect, HeaderWrapper } from './Styled'
+import { HeaderBtn, HeaderInner, HeaderLogoWrapper, HeaderSelect, HeaderWrapper, SelectWrapper } from './Styled'
 import { Container } from '../../assets/style/GlobalStyled'
 
 
@@ -21,11 +21,13 @@ function Header() {
               </p>
             </HeaderLogoWrapper>
             <HeaderInner>
-              <HeaderSelect>
-                <option value="" >Каталог товаров</option>
-                <option value="">Каталог товаров1</option>
-                <option value="">Каталог товаров2</option>
-              </HeaderSelect>
+              <SelectWrapper>
+                <HeaderSelect>
+                  <option value="" >Каталог товаров <i class="bi bi-caret-down-fill"></i></option>
+                  <option value="">Каталог товаров1</option>
+                  <option value="">Каталог товаров2</option>
+                </HeaderSelect>
+              </SelectWrapper>
               <div className='search__inp__wrapper'>
                 <label className='search__label' htmlFor="search"><i className="bi bi-search"></i></label>
                 <input className='search__inp' id='search' type="text" placeholder='Поиск товаров'/>

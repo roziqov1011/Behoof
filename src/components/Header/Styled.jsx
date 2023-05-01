@@ -34,6 +34,7 @@ label{
     color:  #7E8794;
     font-weight: bold;
     font-size: 22px;
+    
 }
     input{
         padding: 16px;
@@ -45,14 +46,31 @@ label{
         flex-grow: 1;
     }
 `
+export const SelectWrapper =  styled.div`
+height: 100%;
+position: relative;
+    &:after {
+  content: "▼";
+  font-size: 14px;
+  top: 20px;
+  right: 20px;
+  color: white;
+  position: absolute;
+}
+`
 export const HeaderSelect = styled.select`
-padding: 16px;
+-webkit-appearance: none;
+  appearance: none;
+padding: 20px;
+padding-right: 48px;
 color: white;
 border-top-left-radius: 8px;
 border-bottom-left-radius: 8px;
 background: #FF4D4D; 
 border: none;
 outline: none;
+font-size: 16px;
+
 @media (max-width: 580px) {
             display: none;
         }

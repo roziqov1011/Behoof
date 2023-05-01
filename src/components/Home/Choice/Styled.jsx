@@ -8,7 +8,7 @@ export const ChoiceWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow-x: hidden;
   @media (max-width: 600px) {
     margin: 0px 0;
     padding: 50px 0;
@@ -20,7 +20,8 @@ export const ChoiceRotate = styled.div`
   transform: rotate(2deg);
   background: #F2F5F9;
   width: 150%;
-  height: 87%;
+  height: 90%;
+  bottom: 20px;
 `;
 
 export const ChoiceInner =  styled.div`
