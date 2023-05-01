@@ -22,6 +22,7 @@ flex-grow: 0.9;
 .search__inp__wrapper{
     display: flex;
     position: relative;
+    flex-grow: 1;
 }
 label{
     position: absolute;
