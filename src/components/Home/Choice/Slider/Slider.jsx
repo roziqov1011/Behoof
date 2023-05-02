@@ -28,7 +28,7 @@ const [changeWidth, setChangeWidth] = useState(window.innerWidth)
         grid={{
           rows: 2,
         }}
-        spaceBetween={10}
+        spaceBetween={30}
         navigation={true}
 
         modules={[Grid,Navigation]}
