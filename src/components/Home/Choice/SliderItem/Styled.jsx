@@ -11,6 +11,7 @@ export const SliderItemWrapper = styled.div`
 export const SliderItemTop = styled.div`
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
   p {
     color: #7e8794;
   }
@@ -40,6 +41,7 @@ export const SliderProgressWrapper = styled.div`
   margin-left: 20px;
 `;
 export const SliderProgress = styled.div`
+margin-bottom: 8px;
   p {
     color: #7e8794;
     font-weight: 400;

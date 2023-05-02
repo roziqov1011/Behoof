@@ -8,7 +8,7 @@ export const ChoiceWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
+  overflow: hidden;
   @media (max-width: 600px) {
     margin: 0px 0;
     padding: 50px 0;
@@ -74,15 +74,10 @@ p{
 `;
 
 
-export const ChoiceBtnList = styled.ul`
-  padding-left: 40px;
-  padding-top: 24px;
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
+export const ChoiceBtnList = styled.div`
  
 `
-export const ChoiceBtnItem = styled.li`
+export const ChoiceBtnItem = styled.div`
   button{
     cursor: pointer;
     margin-right: 16px;

@@ -1,5 +1,5 @@
 .my__test{
-height: 450px;
+height: 600px;
 margin-top: 20px;
 display: flex;
 justify-content: center;
@@ -37,7 +37,7 @@ justify-content: center;
     width: 56px;
     height: 56px;
     right: -0px;
-    top:180px;
+    top:250px;
     z-index: 123;
     display: flex;
     align-items: center;
@@ -50,7 +50,7 @@ justify-content: center;
     border-radius: 50%;
     width: 56px;
     height: 56px;
-    top:180px;
+    top:250px;
     z-index: 123;
     left: 0;
     display: flex;

@@ -16,13 +16,18 @@ padding: 80px;
 border-radius: 16px;
 @media (max-width: 1200px) {
     background-size:200px , 110px, contain;
-padding: 50px;
+    padding: 50px;
 
 }
 @media (max-width: 800px) {
             padding-bottom: 250px;
             background-position: bottom right 150px, bottom right 50px, center;
         }
+@media (max-width: 500px) {
+    padding-left: 12px;
+    padding-right: 12px;
+
+}
     p{
         font-weight: 700;
         font-size: 48px;
@@ -47,17 +52,21 @@ padding: 50px;
         margin-top: 40px;
         display: flex;
         justify-content: space-between;
-        @media (max-width: 800px) {
-            max-width: 300px;
-            img{
-                width: 150px;
-                height: 45px;
-            }
-        }
+        flex-grow: 1;
+       
         @media (max-width: 440px) {
-            img{
-                width: 120px;
-                height: 35px;
+            p{
+                font-weight: 800;
+                font-size: 20px;
+                line-height: 28px;
+            }
+            .play{
+                width: 163px;
+                height: 48px;
+            }
+            .app__store{
+                width: 145px;
+                height: 48px;
             }
         }
     }

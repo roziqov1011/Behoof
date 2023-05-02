@@ -16,10 +16,10 @@ function Social() {
                 </p>
                 <div>
                     <a href="">
-                        <img src={play} alt="" />
+                        <img className='play' src={play} alt="" />
                     </a>
                     <a href="">
-                        <img src={appStore} alt="" />
+                        <img className='app__store' src={appStore} alt="" />
                     </a>
                 </div>
             </SocialInner>
