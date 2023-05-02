@@ -4,9 +4,7 @@ margin-top: 20px;
 display: flex;
 justify-content: center;
 }
-.my__test .swiper-button-next{
-  background-color: red ;
-}
+
 
 .swiper {
     width: 100%;
@@ -29,6 +27,11 @@ justify-content: center;
   .my__test .swiper{
     width: 100%;
     padding: 0 40px; 
+  }
+  @media (max-width: 450px) {
+    .my__test .swiper{
+      padding: 0;
+    }
   }
   .my__test .swiper-button-next {
     position: absolute;
