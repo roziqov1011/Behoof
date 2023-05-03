@@ -17,7 +17,7 @@ function SliderItem() {
           <p>Портативные колонки </p>
           <h4>Apple iPhone 13 Pro Max 256 ГБ серый</h4>
         </div>
-        <div>
+        <div className="item__top__wrapper">
           <button>
             <i className="bi bi-heart"></i>
           </button>
@@ -34,7 +34,7 @@ function SliderItem() {
                     <div>
                     {
                         arr?.map((item, index)=>(
-                            <span key={index} className={Desigin >= index+1 ? 'active': null}></span>
+                            <span key={index} className={Desigin >= index+1 ? 'my__active': null}></span>
                         ))
                     }
                     </div>
@@ -44,7 +44,7 @@ function SliderItem() {
                     <div>
                     {
                         arr?.map((item, index)=>(
-                            <span key={index} className={Power >= index+1 ? 'active': null}></span>
+                            <span key={index} className={Power >= index+1 ? 'my__active': null}></span>
                         ))
                     }
                     </div>
@@ -54,7 +54,7 @@ function SliderItem() {
                     <div>
                     {
                         arr?.map((item, index)=>(
-                            <span key={index} className={Display >= index+1 ? 'active': null}></span>
+                            <span key={index} className={Display >= index+1 ? 'my__active': null}></span>
                         ))
                     }
                     </div>
@@ -64,7 +64,7 @@ function SliderItem() {
                     <div>
                     {
                         arr?.map((item, index)=>(
-                            <span key={index} className={Camera >= index+1 ? 'active': null}></span>
+                            <span key={index} className={Camera >= index+1 ? 'my__active': null}></span>
                         ))
                     }
                     </div>
@@ -74,7 +74,7 @@ function SliderItem() {
                     <div>
                     {
                         arr?.map((item, index)=>(
-                            <span key={index} className={Answer >= index+1 ? 'active': null}></span>
+                            <span key={index} className={Answer >= index+1 ? 'my__active': null}></span>
                         ))
                     }
                     </div>
@@ -84,7 +84,7 @@ function SliderItem() {
                     <div>
                     {
                         arr?.map((item, index)=>(
-                            <span key={index} className={Portability >= index+1 ? 'active': null}></span>
+                            <span key={index} className={Portability >= index+1 ? 'my__active': null}></span>
                         ))
                     }
                     </div>

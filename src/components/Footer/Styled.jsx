@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 export const FooterWrapper = styled.footer`
-margin-top: 100px;
-padding-top: 45px;
+margin-top: 32px;
+padding-top: 29px;
 padding-bottom: 25px;
     background: #F2F5F9;
 `;

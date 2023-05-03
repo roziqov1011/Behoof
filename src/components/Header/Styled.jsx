@@ -7,7 +7,6 @@ export const HeaderWrapper = styled.header`
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
-        
 `
 
 export const HeaderLogoWrapper = styled.div`
@@ -37,11 +36,14 @@ label{
     color:  #7E8794;
     font-weight: bold;
     font-size: 22px;
+    @media (max-width: 480px) {
+            top: 10px;
+        }
     
 }
     input{
         padding: 16px;
-        padding-left: 50px;
+        padding-left: 54px;
         border: none;
         background: #F2F5F9;
         border-radius: 0px 8px 8px 0px;
@@ -88,7 +90,7 @@ padding: 16px;
 border:none;
 margin-left: 20px;
 font-size: 22px;
-@media (max-width: 430px) {
+@media (max-width: 480px) {
             display: none;
         }
 `

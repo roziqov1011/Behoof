@@ -4,7 +4,12 @@ margin-top: 20px;
 display: flex;
 justify-content: center;
 }
-
+@media (max-width: 700px) {
+  .my__test{
+    height: auto;
+    margin-bottom: 70px;
+  }
+}
 
 .swiper {
     width: 100%;

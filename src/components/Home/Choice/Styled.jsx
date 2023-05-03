@@ -3,15 +3,19 @@ import styled from "styled-components";
 export const ChoiceWrapper = styled.div`
 
   padding: 53px 0;
+  padding-bottom: 100px;
   position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  @media (max-width: 700px) {
+    padding: 53px 0;
+    padding-bottom: 0px;
+  }
   @media (max-width: 600px) {
     margin: 0px 0;
-    padding: 50px 0;
   }
 `;
 export const ChoiceRotate = styled.div`
@@ -21,7 +25,7 @@ export const ChoiceRotate = styled.div`
   background: #F2F5F9;
   width: 150%;
   height: 90%;
-  bottom: 20px;
+  bottom: 25px;
 `;
 
 export const ChoiceInner =  styled.div`

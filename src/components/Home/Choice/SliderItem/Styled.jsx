@@ -2,16 +2,21 @@ import styled from "styled-components";
 
 export const SliderItemWrapper = styled.div`
   width: 634px;
+  height: auto;
   background: #fdfdfd;
   padding: 20px;
   margin-top: 20px;
   border: 1px solid #f2f5f9;
   border-radius: 12px;
+ 
 `;
 export const SliderItemTop = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  @media (max-width: 600px) {
+    margin-top: 12px;
+  }
   p {
     color: #7e8794;
   }
@@ -19,6 +24,9 @@ export const SliderItemTop = styled.div`
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
+  }
+  .item__top__wrapper{
+    display: flex;
   }
   button {
     width: 44px;
@@ -66,7 +74,7 @@ margin-bottom: 8px;
     display: flex;
 
   }
-  .active{
+  .my__active{
     background-color: #FF4D4D;
   }
 

@@ -14,7 +14,9 @@ import { Grid, Navigation, Pagination } from "swiper";
 import SliderItem from "../SliderItem/SliderItem";
 
 export default function MySlider() {
+
 const [changeWidth, setChangeWidth] = useState(window.innerWidth)
+const [siliderRow, setsiliderRow] = useState(changeWidth > 700 ? 2 : 1)
   window.onresize = function() {
     setChangeWidth(window.innerWidth)
   };
@@ -26,7 +28,7 @@ const [changeWidth, setChangeWidth] = useState(window.innerWidth)
       <Swiper
         slidesPerView={changeWidth >=990 ? 2: 1}
         grid={{
-          rows: 2,
+          rows: siliderRow,
         }}
         spaceBetween={20}
         navigation={true}
